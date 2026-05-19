@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#006e2f",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-dim": "#cbdbf5",
+                        "surface-bright": "#f8f9ff",
+                        "background": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#007432",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#b87500",
+                        "on-tertiary-fixed": "#2a1700",
+                        "secondary-fixed-dim": "#4ae176",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "inverse-surface": "#213145",
+                        "primary-fixed": "#dae2fd",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-secondary-fixed-variant": "#005321",
+                        "error": "#ba1a1a",
+                        "surface-container": "#e5eeff",
+                        "on-primary-container": "#7c839b",
+                        "on-primary-fixed": "#131b2e",
+                        "on-error": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "on-background": "#0b1c30",
+                        "tertiary": "#000000",
+                        "surface-container-highest": "#d3e4fe",
+                        "inverse-primary": "#bec6e0",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "primary": "#000000",
+                        "surface": "#f8f9ff",
+                        "on-secondary-fixed": "#002109",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#0b1c30",
+                        "secondary-fixed": "#6bff8f",
+                        "outline": "#76777d",
+                        "tertiary-container": "#2a1700",
+                        "surface-variant": "#d3e4fe",
+                        "on-surface-variant": "#45464d",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-container": "#6bff8f",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "sm": "8px",
+                        "grid-gutter": "12px",
+                        "xl": "32px",
+                        "container-padding": "16px",
+                        "md": "16px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "number-heavy": ["Geist"],
+                        "display": ["Inter"],
+                        "h2": ["Inter"],
+                        "body-base": ["Inter"],
+                        "h1": ["Inter"],
+                        "label-caps": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "number-heavy": ["14px", {"lineHeight": "14px", "fontWeight": "700"}],
+                        "display": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h2": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "h1": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-base">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-padding h-16 bg-surface-container-lowest dark:bg-surface-container border-b border-outline-variant dark:border-outline shadow-sm">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface dark:text-on-surface-variant cursor-pointer">menu</span>
+<h1 class="font-display text-h1 font-bold text-primary dark:text-inverse-primary">Album Mundial 2026</h1>
+</div>
+<span class="material-symbols-outlined text-on-surface dark:text-on-surface-variant cursor-pointer">account_circle</span>
+</header>
+<main class="pt-20 pb-24 px-container-padding max-w-2xl mx-auto min-h-screen">
+<!-- Hero Section / Instructions -->
+<section class="mb-lg bg-surface-container-low rounded-xl p-md border border-outline-variant/30">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">info</span>
+<div>
+<h2 class="font-h2 text-h2 mb-xs">Trading Instructions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Copy your missing or repeated IDs to quickly share with other collectors. Use the filters to toggle between your needs and your offers. This text-based format is compatible with all messaging platforms.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Tab Navigation -->
+<div class="flex bg-surface-container-high rounded-full p-1 mb-md">
+<button class="flex-1 py-2 px-4 rounded-full font-label-caps text-label-caps transition-all bg-secondary text-on-secondary shadow-sm">
+                Missing List
+            </button>
+<button class="flex-1 py-2 px-4 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:bg-surface-container-highest">
+                Repeated List
+            </button>
+</div>
+<!-- Content Area: Missing List (Active) -->
+<div class="space-y-md">
+<!-- List Display -->
+<div class="bg-white border border-outline-variant rounded-lg p-md relative group">
+<div class="flex justify-between items-center mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Missing Stickers (42)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-body-sm">content_copy</span>
+</div>
+<div class="font-number-heavy text-body-base text-on-surface leading-relaxed break-all bg-slate-50 p-sm rounded border border-dashed border-slate-200">
+                    arg-1, arg-3, bra-12, bra-15, bra-20, can-2, can-8, fra-5, fra-7, fra-14, ger-2, ger-18, ita-1, ita-9, jpn-4, jpn-11, mex-1, mex-14, por-3, por-10, por-15, usa-2, usa-12, usa-20
+                </div>
+</div>
+<!-- Repeated List (Secondary View) -->
+<div class="bg-white border border-outline-variant rounded-lg p-md">
+<div class="flex justify-between items-center mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Repeated Stickers (12)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-body-sm">swap_horiz</span>
+</div>
+<div class="font-number-heavy text-body-base text-secondary leading-relaxed break-all bg-slate-50 p-sm rounded border border-dashed border-slate-200">
+                    mex-5, ger-10 (x2), arg-7, bra-3, fra-1 (x3), jpn-9, por-22, usa-5 (x2)
+                </div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-xl grid grid-cols-1 gap-md">
+<button class="w-full h-14 bg-primary text-on-primary rounded-lg font-h2 text-h2 flex items-center justify-center gap-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined">content_copy</span>
+                Copy to Clipboard
+            </button>
+<div class="flex items-center gap-md">
+<button class="flex-1 h-12 bg-surface-container-high text-on-surface rounded-lg font-label-caps text-label-caps flex items-center justify-center gap-xs hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                    Share via...
+                </button>
+<div class="flex gap-sm">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all">
+<span class="material-symbols-outlined">chat</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Success Toast Simulation -->
+<div class="mt-lg flex items-center justify-center">
+<div class="bg-secondary-container text-on-secondary-container px-md py-sm rounded-full flex items-center gap-xs shadow-sm border border-secondary/20">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-caps text-label-caps">List copied to clipboard!</span>
+</div>
+</div>
+<!-- Aesthetic Graphic -->
+<div class="mt-xl opacity-20 flex justify-center">
+<img alt="World Cup Icon" class="w-16 h-16 grayscale" data-alt="A minimalist and high-performance flat digital icon of a professional soccer ball with geometric patterns. The icon is rendered in a grayscale professional palette to maintain a corporate modern aesthetic. It is isolated on a clean white background with soft, subtle ambient lighting, reflecting a minimalist sports collector app theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRD3oEGMyUidsFVLO54JA91Nr2S7TTfmrjRSW7AImEYeQ5Gc3ksKQCKvf8s2WwNNUXo4k-zFRqAKOGC3rI-WkpglCRTCX4ipElG5yku3awLxiFU2Aa4a026NGrDKziGf8q5DGADpL7aQ2-Yz9HWJBISJDOeZlGVDXJxDPJSivcOU8wQxBOvjiJbYX7HyOP2ZQZiR5pXNGwSptcJmEaY_NBlKq3ROIu_TexfCcCJRg1lGk6vvS8gRw63lZhCYXNlk_cV3Ef2AIRtePf"/>
+</div>
+</main>
+<!-- NavigationDrawer (Suppressed based on Task Context of focused Swap Screen, but typically part of shell) -->
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe px-4 bg-surface/90 dark:bg-surface-container/90 backdrop-blur-lg border-t border-outline-variant dark:border-outline">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-container-low transition-colors px-4 py-2" href="#">
+<span class="material-symbols-outlined">style</span>
+<span class="font-label-caps text-label-caps">Album</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-container-low transition-colors px-4 py-2" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-label-caps text-label-caps">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim font-bold hover:bg-surface-container-low transition-colors px-4 py-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">swap_horiz</span>
+<span class="font-label-caps text-label-caps">Swap</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-container-low transition-colors px-4 py-2" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-label-caps">Profile</span>
+</a>
+</nav>
+</body></html>
